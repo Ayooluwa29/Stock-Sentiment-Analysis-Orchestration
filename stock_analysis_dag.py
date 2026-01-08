@@ -4,7 +4,7 @@ from airflow.models import Variable
 import pendulum
 from pathlib import Path
 from downloader import build_url, download_file
-from extractor import extract_and_identify
+from extract import extract_and_identify
 from db_loader import create_and_truncate_table, load_csv_to_db
 
 # Get Airflow Variables
